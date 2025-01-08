@@ -45,9 +45,8 @@ class MyHome extends StatelessWidget {
                 ],
               ),
             ),
-            // White snow valley
             const Padding(
-              padding: const EdgeInsets.all(12.0),
+              padding: EdgeInsets.all(12.0),
               child: Row(
                 children: [
                   Icon(
@@ -69,17 +68,26 @@ class MyHome extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
+                // Rating Column
                 Column(
                   children: [
                     Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
-                        color: Colors.grey,
+                        border: Border.all(color: Colors.white, width: 2),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.2),
+                            blurRadius: 5,
+                            spreadRadius: 1,
+                          ),
+                        ],
+                        color: Colors.white,
                       ),
                       width: 50,
                       height: 50,
                       child: Icon(
-                        Icons.location_on_outlined,
+                        Icons.star,
                         color: Colors.yellow,
                       ),
                     ),
@@ -89,57 +97,73 @@ class MyHome extends StatelessWidget {
                     ),
                     Text(
                       '4.8(3.2k)',
-                      style: TextStyle(fontSize: 25),
+                      style: TextStyle(fontSize: 15),
                     ),
                   ],
                 ),
-                // 2nd emoji
+                // Destination Column
                 Column(
                   children: [
                     Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
-                        color: Colors.grey,
+                        border: Border.all(color: Colors.white, width: 2),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.2),
+                            blurRadius: 5,
+                            spreadRadius: 1,
+                          ),
+                        ],
+                        color: Colors.white,
                       ),
                       width: 50,
                       height: 50,
                       child: Icon(
-                        Icons.location_on_outlined,
+                        Icons.map,
                         color: Colors.yellow,
                       ),
                     ),
                     Text(
-                      'Rating',
+                      'Destination',
                       style: TextStyle(color: Colors.grey),
                     ),
                     Text(
-                      '4.8(3.2k)',
-                      style: TextStyle(fontSize: 25),
+                      '3000 Km',
+                      style: TextStyle(fontSize: 15),
                     ),
                   ],
                 ),
-                // 3rd emoji
+                // Restaurants Column
                 Column(
                   children: [
                     Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
-                        color: Colors.grey,
+                        border: Border.all(color: Colors.white, width: 2),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.2),
+                            blurRadius: 5,
+                            spreadRadius: 1,
+                          ),
+                        ],
+                        color: Colors.white,
                       ),
                       width: 50,
                       height: 50,
                       child: Icon(
-                        Icons.location_on_outlined,
+                        Icons.restaurant,
                         color: Colors.yellow,
                       ),
                     ),
                     Text(
-                      'Rating',
+                      'Restaurants',
                       style: TextStyle(color: Colors.grey),
                     ),
                     Text(
-                      '4.8(3.2k)',
-                      style: TextStyle(fontSize: 25),
+                      '108',
+                      style: TextStyle(fontSize: 15),
                     ),
                   ],
                 ),
@@ -157,7 +181,8 @@ class MyHome extends StatelessWidget {
                 ),
               ),
             ),
-            // button
+
+            // Button
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Center(

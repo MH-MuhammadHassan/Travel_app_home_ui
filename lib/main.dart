@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:travel_ui/home.dart';
+import 'package:travel_screen_ui/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,8 +10,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MyHome(
-      
-    );
+    return MyHome();
   }
 }
